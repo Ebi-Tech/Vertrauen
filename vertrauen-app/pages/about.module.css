@@ -1,0 +1,88 @@
+.container {
+    max-width: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .header {
+    background-color: #1E3A8A;
+    padding: 5px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start; /* Changed to 'flex-start' for left alignment */
+    text-decoration: none;
+    text-decoration-line: none;
+    text-decoration-thickness: 0;
+    text-decoration-color: transparent;
+    border-bottom: none;
+  }
+  
+  .headerContent {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    text-decoration-line: none;
+    text-decoration-thickness: 0;
+    text-decoration-color: transparent;
+    border-bottom: none;
+  }
+  .logo {
+    margin-right: 10px;
+  }
+  
+  .title {
+    font-size: 3rem;
+    color: white;
+    font-weight: bold;
+    margin: 0;
+    text-decoration: none;
+    text-decoration-line: none;
+    text-decoration-thickness: 0;
+    text-decoration-color: transparent;
+    border-bottom: none;
+    width: 100%;
+  }
+  
+  .banner {
+      background-color: #e6e6e6;
+      border-radius: 20px;
+      color: #000;
+      padding: 5px;
+      text-align: center;
+      width: 100%;
+      margin-top: 30px;
+  }
+  
+  .bannerContent {
+   margin: 0 auto;
+   width: 100%;
+  }
+
+  .visionSection {
+    background-color: #e6e6e6;
+      border-radius: 20px;
+      color: #000;
+      padding: 5px;
+      text-align: center;
+      width: 100%;
+  }
+  .teamSection, .callToAction, .footer {
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  .teamMember {
+      background-color: #fff;
+      padding: 5px;
+      border-radius: 10px;
+      box-shadow: 6px 4px 6px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+      border: 1px solid #000;
+   }
+  
+  .footer {
+    background-color: #1E3A8A;
+    color: #fff;
+    padding: 10px 0;
+  }  

@@ -1,36 +1,25 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Vertrauen Think Tank
 
-## Getting Started
+Welcome to the Vertrauen Think Tank! This README provides an overview of our organization and its goals.
 
-First, run the development server:
+## About Vertrauen
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Vertrauen is a think tank dedicated to fostering innovation and collaboration in the field of technology. We bring together experts from various disciplines to tackle complex challenges and drive positive change.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Our Mission
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Our mission is to advance the understanding and application of technology for the betterment of society. We strive to create a platform for knowledge sharing, research, and thought leadership.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## How to Contribute
 
-## Learn More
+We welcome contributions from individuals and organizations who share our passion for technology and its impact on society. Here are a few ways you can get involved:
 
-To learn more about Next.js, take a look at the following resources:
+- Join our community: Participate in discussions, share your ideas, and collaborate with like-minded individuals.
+- Contribute to our projects: Contribute to our open-source projects and help us build innovative solutions.
+- Attend our events: Join us at our conferences, workshops, and seminars to learn from industry experts and network with peers.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Contact Us
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+If you have any questions or would like to get in touch with us, please reach out to our team at [contact@vertrauen.org](mailto:contact@vertrauen.org).
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+We look forward to collaborating with you!
