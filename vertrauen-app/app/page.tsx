@@ -64,15 +64,15 @@
             <p className="text-gray-700">See our various completed projects.</p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-lg">
-            <h3 className="text-2xl font-semibold mb-3">Photo Gallery</h3>
-            <p className="text-gray-700">Check out our Photo Gallery.</p>
+            <h3 className="text-2xl font-semibold mb-3">Media Gallery</h3>
+            <p className="text-gray-700">Check out our Media Gallery.</p>
           </div>
         </section>
 
         {/* Call to Action */}
         <section className="container mx-auto py-16 text-center">
           <a
-            href="https://example.com/contact"
+            href="https://www.instagram.com/vertrauen_._?igsh=d25hejJjcnJpZWFk"
             className="inline-block bg-blue-900 text-white text-lg font-semibold py-3 px-6 rounded-lg hover:bg-blue-700 transition"
           >
             Get in Touch
@@ -80,9 +80,9 @@
         </section>
 
         {/* Footer */}
-        <footer className="w-full bg-blue-900 text-white py-4">
+        <footer className="w-full bg-blue-900 text-white py-4 rounded-xl">
           <div className="container mx-auto text-center">
-            <p className="text-sm">&copy; 2024 Think Tank Team. All rights reserved.</p>
+            <p className="text-sm">&copy; 2024 Vertrauen. All rights reserved.</p>
           </div>
         </footer>
       </main>

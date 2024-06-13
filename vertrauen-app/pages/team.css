@@ -7,22 +7,22 @@
 }
 
 .header-container {
-  display: flex;
-  align-items: center;
-  max-width: 1200px;
+  background-color: #1E3A8A;
+  padding: 5px;
   width: 100%;
-  padding: 1rem;
-  background-color: rgba(0, 38, 89, 0.5);
-  margin: 0 auto;
-  flex-direction: column; /* Change to column for small screens */
+  display: flex;
+  justify-content: flex-start; /* Ensure left alignment */
+  align-items: center;
+  text-decoration: none;
+  border-bottom: none;
 }
 
 .header-title {
   font-size: 2rem;
   font-weight: bold;
-  margin-left: 0; /* Center the title for small screens */
+  margin-left: 0;
   color: #ffffff;
-  text-align: center; /* Center text for small screens */
+  text-align: left; /* Ensure left alignment */
 }
 
 .header-section {
@@ -91,13 +91,12 @@
 
 @media (min-width: 640px) {
   .header-container {
-    flex-direction: row; /* Switch to row for larger screens */
+    flex-direction: row;
   }
 
   .header-title {
     font-size: 2.5rem;
-    margin-left: 1rem; /* Restore margin-left for larger screens */
-    text-align: left; /* Left-align text for larger screens */
+    margin-left: 1rem;
   }
 
   .header-title-main {
@@ -130,6 +129,13 @@
     width: 120px;
     height: 120px;
   }
+
+  .header-container::before {
+    content: "Vertrauen";
+    font-size: 1.5rem;
+    color: #ffffff;
+    margin-right: 1rem;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -148,5 +154,9 @@
   .team-member-image {
     width: 140px;
     height: 140px;
+  }
+
+  .header-container::before {
+    font-size: 2rem; /* Increase the font size for larger screens */
   }
 }
