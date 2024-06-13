@@ -3,14 +3,14 @@
   import Image from 'next/image';
   import Link from 'next/link';
   import Head from 'next/head';
-  import MyDocument from '@/pages/_document';
-
+ 
 
   const images = [
     '/V-images/a.jpg',
     '/V-images/b.jpg',
-    '/V-images/c.jpg'
-  ];
+    '/V-images/c.jpg',
+    '/V-images/d.jpg',
+    ];
 
   export default function Home() {
     const [currentImage, setCurrentImage] = useState(images[0]);
@@ -53,10 +53,12 @@
             <p className="text-gray-700">Who we are, our values that drive us, where we come from and Our Mission</p>
           </div>
           </Link>
+          <Link href="/team">
           <div className="bg-white p-6 rounded-lg shadow-lg">
             <h3 className="text-2xl font-semibold mb-3">Meet the Team</h3>
             <p className="text-gray-700">Meet our team of experts who are at the forefront of their respective fields.</p>
           </div>
+          </Link>
           <div className="bg-white p-6 rounded-lg shadow-lg">
             <h3 className="text-2xl font-semibold mb-3">Projects</h3>
             <p className="text-gray-700">See our various completed projects.</p>
