@@ -84,6 +84,9 @@ export default function Team() {
                 <Link href="/project"passHref legacyBehavior>
                   <a className="block px-4 py-2 text-gray-800 hover:bg-gray-200">Projects</a>
                 </Link>
+                <Link href="/gallery"passHref legacyBehavior>
+                  <a className="block px-4 py-2 text-gray-800 hover:bg-gray-200">Gallery</a>
+                </Link>
               </li>
               <li>
                 <Link href="https://www.instagram.com/vertrauen_._?igsh=d25hejJjcnJpZWFk"passHref legacyBehavior>

@@ -41,6 +41,11 @@ const About = () => {
                 </Link>
               </li>
               <li>
+                <Link href="/gallery"passHref legacyBehavior>
+                  <a className="block px-4 py-2 text-gray-800 hover:bg-gray-200">Gallery</a>
+                </Link>
+              </li>
+              <li>
                 <Link href="https://www.instagram.com/vertrauen_._?igsh=d25hejJjcnJpZWFk"passHref legacyBehavior>
                   <a className="block px-4 py-2 text-gray-800 hover:bg-gray-200">Contact Us</a>
                 </Link>
@@ -79,7 +84,8 @@ const About = () => {
 
       {/* Call to Action */}
       <section className="flex justify-center items-center mt-2 p-8">
-        <a href="https://www.instagram.com/vertrauen_._?igsh=d25hejJjcnJpZWFk" className="inline-block py-2 px-4 bg-blue-900 text-white no-underline rounded transition-colors duration-300 ease hover:bg-blue-800">
+        <a href="https://www.instagram.com/vertrauen_._?igsh=d25hejJjcnJpZWFk" className="inline-block py-2 px-4 bg-blue-900 text-white no-underline rounded transition-colors duration-300 ease hover:bg-blue-800"
+        target="_blank" rel="noopener noreferrer">
           Contact Us
         </a>
       </section>

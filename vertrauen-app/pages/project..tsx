@@ -91,7 +91,8 @@ const Project = () => {
               </li>
               <li>
                 <Link href="https://www.instagram.com/vertrauen_._?igsh=d25hejJjcnJpZWFk"passHref legacyBehavior>
-                  <a className="block px-4 py-2 text-gray-800 hover:bg-gray-200">Contact Us</a>
+                  <a className="block px-4 py-2 text-gray-800 hover:bg-gray-200"
+                  target="_blank" rel="noopener noreferrer">Contact Us</a>
                 </Link>
               </li>
             </ul>

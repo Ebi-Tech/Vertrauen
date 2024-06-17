@@ -127,10 +127,12 @@ export default function Home() {
             <p className="text-gray-700">See our various completed projects.</p>
           </div>
         </Link>
+        <Link href="/gallery">
         <div className="bg-white p-6 rounded-lg shadow-lg flex flex-col justify-between h-full hover:shadow-xl transition-shadow">
           <h3 className="text-2xl font-semibold mb-3">Media Gallery</h3>
           <p className="text-gray-700">Check out our Media Gallery.</p>
         </div>
+        </Link>
       </section>
 
       {/* Call to Action */}
@@ -138,7 +140,7 @@ export default function Home() {
         <a
           href="https://www.instagram.com/vertrauen_._?igsh=d25hejJjcnJpZWFk"
           className="inline-block bg-blue-900 text-white text-lg font-semibold py-3 px-6 rounded-lg hover:bg-blue-700 transition"
-        >
+          target="_blank" rel="noopener noreferrer">
           Get in Touch
         </a>
       </section>
@@ -147,8 +149,10 @@ export default function Home() {
       <footer className="w-full bg-blue-900 text-white py-4 rounded-xl">
         <div className="container mx-auto text-center">
           <div className="mb-4">
-            <a href="https://www.youtube.com/@VERTRAUEN148" className="mx-2"><FaYoutube className="inline-block mr-2" /><i className="fab fa-youtube">youtube@vertrauen</i></a>
-            <a href="https://www.instagram.com/vertrauen_._?igsh=d25hejJjcnJpZWFk" className="mx-2"><FaInstagram className="inline-block mr-2" /><i className="fab fa-instagram">instagram@vertrauen_._</i> </a>
+            <a href="https://www.youtube.com/@VERTRAUEN148" className="mx-2"
+            target="_blank" rel="noopener noreferrer"><FaYoutube className="inline-block mr-2" /><i className="fab fa-youtube">youtube@vertrauen</i></a>
+            <a href="https://www.instagram.com/vertrauen_._?igsh=d25hejJjcnJpZWFk" className="mx-2"
+            target="_blank" rel="noopener noreferrer"><FaInstagram className="inline-block mr-2" /><i className="fab fa-instagram">instagram@vertrauen_._</i> </a>
           </div>
 
           <p className="text-sm">Kigali, Rwanda.</p>
