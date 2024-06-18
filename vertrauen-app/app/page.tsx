@@ -112,7 +112,7 @@ export default function Home() {
         <Link href="/about">
           <div className="bg-white p-6 rounded-lg shadow-lg flex flex-col justify-between h-full hover:shadow-xl transition-shadow">
             <h3 className="text-2xl font-semibold mb-3">About Us</h3>
-            <p className="text-gray-700">Who we are, our values that drive us, where we come from and Our Mission</p>
+            <p className="text-gray-700">Mission and Problem Statement, Who we are, Our values, where we come from...</p>
           </div>
         </Link>
         <Link href="/team">
@@ -124,7 +124,7 @@ export default function Home() {
         <Link href="/project">
           <div className="bg-white p-6 rounded-lg shadow-lg flex flex-col justify-between h-full hover:shadow-xl transition-shadow">
             <h3 className="text-2xl font-semibold mb-3">Projects</h3>
-            <p className="text-gray-700">See our various completed projects.</p>
+            <p className="text-gray-700">See our various completed projects including E-Lab Challenges 1-6.</p>
           </div>
         </Link>
         <Link href="/gallery">
