@@ -14,7 +14,7 @@ const Gallery = () => {
     setMenuOpen(!menuOpen);
   };
 
-  const openModal = (image) => {
+  const openModal = (image: React.SetStateAction<{ src: string; alt: string; }>) => {
     setSelectedImage(image);
     setModalIsOpen(true);
   };
