@@ -88,6 +88,9 @@ const Project = () => {
                 <Link href="/team" passHref legacyBehavior>
                   <a className="block px-4 py-2 text-gray-800 hover:bg-gray-200">The Team</a>
                 </Link>
+                <Link href="/gallery"passHref legacyBehavior>
+                  <a className="block px-4 py-2 text-gray-800 hover:bg-gray-200">Gallery</a>
+                </Link>
               </li>
               <li>
                 <Link href="https://www.instagram.com/vertrauen_._?igsh=d25hejJjcnJpZWFk"passHref legacyBehavior>
@@ -101,7 +104,7 @@ const Project = () => {
       </div>
     </header>
             <section className="py-8 mt-10">
-                <h2 className="text-2xl font-bold mb-4">Our Projects</h2>
+                <h2 className="text-2xl font-bold mb-4 text-blue-900">Our Projects</h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
                     {projects.map((project, index) => (
                         <Link href={project.videoSrc} key={index} legacyBehavior passHref>

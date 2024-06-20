@@ -64,6 +64,11 @@ const Gallery = () => {
                   </Link>
                 </li>
                 <li>
+                  <Link href="/project" passHref legacyBehavior>
+                    <a className="block px-4 py-2 text-gray-800 hover:bg-gray-200">Projects</a>
+                  </Link>
+                </li>
+                <li>
                   <Link href="https://www.instagram.com/vertrauen_._?igsh=d25hejJjcnJpZWFk" passHref legacyBehavior>
                     <a className="block px-4 py-2 text-gray-800 hover:bg-gray-200" target="_blank" rel="noopener noreferrer">
                       Contact Us
@@ -77,7 +82,7 @@ const Gallery = () => {
       </header>
 
       <section className="py-8 mt-10">
-        <h2 className="text-2xl font-bold mb-4">Gallery</h2>
+        <h2 className="text-2xl font-bold mb-4 text-blue-900">Gallery</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
           {images.map((image, index) => (
             <div
