@@ -24,7 +24,7 @@ const Gallery = () => {
   };
 
   const images = [
-    { src: '/V-images/a.jpg', alt: 'Description of image 1' },
+    { src: '/V-images/a.jpg', alt: 'First Team Photo 😃' },
     { src: '/V-images/b.jpg', alt: 'Description of image 2' },
     { src: '/V-images/c.jpg', alt: 'Description of image 3' },
     { src: '/V-images/d.jpg', alt: 'Description of image 4' },

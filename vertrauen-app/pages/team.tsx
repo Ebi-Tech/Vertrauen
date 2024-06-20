@@ -7,7 +7,7 @@ import { useState } from 'react';
 
 const teamMembers = [
   {
-    name: 'Divine Ifechukwude',
+    name: 'Divine Ifechukwude (Ebitech)',
     title: 'M.E., S.E., Tutor, Designer',
     image: '/V-images/divine.jpg',
     description: '“I am driven by the desire to cause positive change in the Education sector in my local community in Nigeria. I aim is to instill a better learning mindset and create a superior learning environment for future generations within 10 years."',
