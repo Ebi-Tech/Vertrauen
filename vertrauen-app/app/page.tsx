@@ -95,7 +95,7 @@ export default function Home() {
       </header>
 
       {/* Combined Banner and Introduction Section */}
-      <div className="w-full text-white py-6 sm:h-76 md:h-[60vh] lg:h-[70vh] xl:h-[90vh]" style={{ backgroundImage: `url(${currentImage})`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', height: '100vh', marginTop: '64px' }}>
+      <div className="w-full text-white py-6 sm:h-[40vh] md:h-[60vh] lg:h-[70vh] xl:h-[90vh]" style={{ backgroundImage: `url(${currentImage})`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', height: '100vh', marginTop: '64px' }}>
       </div>
 
       {/* Welcome Section */}
