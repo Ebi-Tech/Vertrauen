@@ -40,7 +40,7 @@ const teamMembers = [
     name: 'Christabella Queen Umutoni',
     title: 'Educator',
     image: '/V-images/queen.jpg',
-    description: '"My mission is to help street children through providing them with safe places to live, good quality education, and emotional support for them to have a brighter future."',
+    description: '"My mission is to achieve widespread awareness of coffee, its origins and its impact on communities in Rwanda by delivering accessible education and fostering experimental learning opportunities."',
   },
   {
     name: 'Ketia Rusizana Teta',
