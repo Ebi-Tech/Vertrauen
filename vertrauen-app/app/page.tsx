@@ -1,4 +1,4 @@
-// pages/index.tsx 
+// pages/index.tsx
 "use client";
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
@@ -58,10 +58,10 @@ export default function Home() {
           <Link href="/gallery" className="mx-2 hover:underline">Media Gallery</Link>
           <Link href="https://www.instagram.com/vertrauen_._?igsh=d25hejJjcnJpZWFk" className="mx-2 hover:underline">Contact</Link>
         </nav>
-        <div className="md:hidden mr-4">
+        <div className="md:hidden mr-4 relative">
           <MdMenu onClick={toggleMenu} className="text-white w-8 h-8 cursor-pointer" />
           {menuOpen && (
-            <div className="absolute right-0 mt-2 w-48 bg-white rounded-lg shadow-lg">
+            <div className="absolute right-0 mt-2 w-48 bg-white rounded-lg shadow-lg z-50">
               <ul className="py-1">
                 <li>
                   <Link href="/about" passHref legacyBehavior>
@@ -163,3 +163,4 @@ export default function Home() {
     </main>
   );
 }
+
