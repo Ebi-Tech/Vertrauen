@@ -25,7 +25,7 @@ export default function Home() {
         const nextIndex = (currentIndex + 1) % images.length;
         return images[nextIndex];
       });
-    }, 2000); // Change image every 2 seconds
+    }, 3000); // Change image every 3 seconds
 
     return () => clearInterval(interval);
   }, []);
@@ -95,7 +95,7 @@ export default function Home() {
       </header>
 
       {/* Combined Banner and Introduction Section */}
-      <div className="w-full text-white py-6 sm:h-96 md:h-[70vh] lg:h-[80vh] xl:h-[100vh]" style={{ backgroundImage: `url(${currentImage})`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', height: '100vh', marginTop: '64px' }}>
+      <div className="w-full text-white py-6 sm:h-96 sm:w-96 md:h-[70vh] lg:h-[80vh] xl:h-[100vh]" style={{ backgroundImage: `url(${currentImage})`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', height: '100vh', marginTop: '64px' }}>
       </div>
 
       {/* Welcome Section */}
@@ -111,25 +111,25 @@ export default function Home() {
       <section className="container mx-auto py-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 text-center">
         <Link href="/about">
           <div className="bg-white p-6 rounded-lg shadow-lg flex flex-col justify-between h-full hover:shadow-xl transition-shadow">
-            <h3 className="text-2xl font-semibold mb-3">About Us</h3>
+            <h3 className="text-2xl font-semibold mb-3 text-blue-900 block">About Us</h3>
             <p className="text-gray-700">Mission Statement, Problem Statement, Proposed Solutions, Prototype, Who we are, Our values, where we come from...</p>
           </div>
         </Link>
         <Link href="/team">
           <div className="bg-white p-6 rounded-lg shadow-lg flex flex-col justify-between h-full hover:shadow-xl transition-shadow">
-            <h3 className="text-2xl font-semibold mb-3">Meet the Team</h3>
+            <h3 className="text-2xl font-semibold mb-3 text-blue-900 block">Meet the Team</h3>
             <p className="text-gray-700">Meet the dedicated individuals behind our success. Our talented team brings expertise, creativity, and passion to every project.</p>
           </div>
         </Link>
         <Link href="/project">
           <div className="bg-white p-6 rounded-lg shadow-lg flex flex-col justify-between h-full hover:shadow-xl transition-shadow">
-            <h3 className="text-2xl font-semibold mb-3">Projects</h3>
+            <h3 className="text-2xl font-semibold mb-3 text-blue-900 block">Projects</h3>
             <p className="text-gray-700">Explore our completed projects, including E-Lab Challenges 1-6, that shows our commitment to excellence and innovation.</p>
           </div>
         </Link>
         <Link href="/gallery">
         <div className="bg-white p-6 rounded-lg shadow-lg flex flex-col justify-between h-full hover:shadow-xl transition-shadow">
-          <h3 className="text-2xl font-semibold mb-3">Media Gallery</h3>
+          <h3 className="text-2xl font-semibold mb-3 text-blue-900 block">Media Gallery</h3>
           <p className="text-gray-700">Explore our gallery to get a visual insight into our projects, team, events, and moments that highlight our journey and achievements.</p>
         </div>
         </Link>
