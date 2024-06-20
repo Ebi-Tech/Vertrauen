@@ -97,7 +97,7 @@ const About = () => {
           </section>
           <section className="bg-yellow-200 rounded-xl text-black p-8 text-center flex-1 border-4 border-yellow-500 max-w-full">
             <h2 className="text-2xl font-bold">Problem Statement</h2>
-            <p className="mt-2 text-justify">Despite high enrollment rates, a majority of Rwandan children complete primary education without solid foundational skills. In January 2024, UNICEF reported that 33% of Primary 3 students can't read grade-level text in Kinyarwanda, and nearly 90% struggle with English. Additionally, 33% of youth are not in employment, education, or training. Gender biases intensifies the issue, with a high percentage of young female domestic workers lacking primary education, and 7% of women married before 18. How can we address these critical gaps in the education system in Rwanda?</p>
+            <p className="mt-2 text-justify">Despite high enrollment rates, a majority of Rwandan children complete primary education without solid foundational skills. In January 2024, UNICEF reported that 33% of Primary 3 students can't read grade-level text in Kinyarwanda and nearly 90% struggle with English. Additionally, 33% of youth are not in employment, education, or training. Gender biases intensifies the issue, with a high percentage of young female domestic workers lacking primary education, and 7% of women married before 18. How can we address these critical gaps in the education system in Rwanda?</p>
           </section>
         </div>
       </div>
