@@ -112,25 +112,25 @@ export default function Home() {
         <Link href="/about">
           <div className="bg-white p-6 rounded-lg shadow-lg flex flex-col justify-between h-full hover:shadow-xl transition-shadow">
             <h3 className="text-2xl font-semibold mb-3">About Us</h3>
-            <p className="text-gray-700">Mission and Problem Statement, Who we are, Our values, where we come from...</p>
+            <p className="text-gray-700">Mission Statement, Problem Statement, Proposed Solutions, Prototype, Who we are, Our values, where we come from...</p>
           </div>
         </Link>
         <Link href="/team">
           <div className="bg-white p-6 rounded-lg shadow-lg flex flex-col justify-between h-full hover:shadow-xl transition-shadow">
             <h3 className="text-2xl font-semibold mb-3">Meet the Team</h3>
-            <p className="text-gray-700">Meet our team of experts who are at the forefront of their respective fields.</p>
+            <p className="text-gray-700">Meet the dedicated individuals behind our success. Our talented team brings expertise, creativity, and passion to every project.</p>
           </div>
         </Link>
         <Link href="/project">
           <div className="bg-white p-6 rounded-lg shadow-lg flex flex-col justify-between h-full hover:shadow-xl transition-shadow">
             <h3 className="text-2xl font-semibold mb-3">Projects</h3>
-            <p className="text-gray-700">See our various completed projects including E-Lab Challenges 1-6.</p>
+            <p className="text-gray-700">Explore our completed projects, including E-Lab Challenges 1-6, that shows our commitment to excellence and innovation.</p>
           </div>
         </Link>
         <Link href="/gallery">
         <div className="bg-white p-6 rounded-lg shadow-lg flex flex-col justify-between h-full hover:shadow-xl transition-shadow">
           <h3 className="text-2xl font-semibold mb-3">Media Gallery</h3>
-          <p className="text-gray-700">Check out our Media Gallery.</p>
+          <p className="text-gray-700">Explore our gallery to get a visual insight into our projects, team, events, and moments that highlight our journey and achievements.</p>
         </div>
         </Link>
       </section>
