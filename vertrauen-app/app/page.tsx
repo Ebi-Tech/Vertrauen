@@ -1,4 +1,3 @@
-// pages/index.tsx
 "use client";
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
@@ -95,7 +94,16 @@ export default function Home() {
       </header>
 
       {/* Combined Banner and Introduction Section */}
-      <div className="w-full text-white py-6 sm:h-[40vh] md:h-[60vh] lg:h-[70vh] xl:h-[90vh]" style={{ backgroundImage: `url(${currentImage})`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', height: '100vh', marginTop: '64px' }}>
+      <div className="w-full text-white py-6 sm:hidden md:block md:h-[60vh] lg:h-[70vh] xl:h-[90vh]" style={{ backgroundImage: `url(${currentImage})`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', height: '100vh', marginTop: '64px' }}>
+      </div>
+
+      {/* Grid of Images for Small Screens */}
+      <div className="w-full grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 p-4 sm:p-6 md:hidden mt-16">
+        {images.map((img, index) => (
+          <div key={index} className="relative w-full h-48 sm:h-64">
+            <Image src={img} alt={`Image ${index + 1}`} layout="fill" objectFit="cover" className="rounded-lg" />
+          </div>
+        ))}
       </div>
 
       {/* Welcome Section */}
@@ -103,7 +111,7 @@ export default function Home() {
         <Image src="/V-images/F.jpg" alt="Logo" width={60} height={50} className="mb-4" />
         <h2 className="text-4xl text-center font-bold mb-4 text-white">Welcome to Our Think Tank</h2>
         <p className="text-gray-300 text-center text-lg">
-          This is Vertrauen, where innovation meets impact to shape a better tomorrow."
+          This is Vertrauen, where innovation meets impact to shape a better tomorrow.
         </p>
       </div>
 
