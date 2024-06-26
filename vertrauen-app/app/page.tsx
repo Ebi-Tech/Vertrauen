@@ -16,18 +16,32 @@ const images = [
 export default function Home() {
   const [currentImage, setCurrentImage] = useState(images[0]);
   const [menuOpen, setMenuOpen] = useState(false);
+  const [isLargeScreen, setIsLargeScreen] = useState(false);
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentImage((prev) => {
-        const currentIndex = images.indexOf(prev);
-        const nextIndex = (currentIndex + 1) % images.length;
-        return images[nextIndex];
-      });
-    }, 3000); // Change image every 3 seconds
+    const checkScreenSize = () => {
+      setIsLargeScreen(window.innerWidth >= 768);
+    };
 
-    return () => clearInterval(interval);
+    checkScreenSize();
+    window.addEventListener('resize', checkScreenSize);
+
+    return () => window.removeEventListener('resize', checkScreenSize);
   }, []);
+
+  useEffect(() => {
+    if (isLargeScreen) {
+      const interval = setInterval(() => {
+        setCurrentImage((prev) => {
+          const currentIndex = images.indexOf(prev);
+          const nextIndex = (currentIndex + 1) % images.length;
+          return images[nextIndex];
+        });
+      }, 3000); // Change image every 3 seconds
+
+      return () => clearInterval(interval);
+    }
+  }, [isLargeScreen]);
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
@@ -94,17 +108,21 @@ export default function Home() {
       </header>
 
       {/* Combined Banner and Introduction Section */}
-      <div className="w-full text-white py-6 sm:hidden md:block md:h-[60vh] lg:h-[70vh] xl:h-[90vh]" style={{ backgroundImage: `url(${currentImage})`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', height: '100vh', marginTop: '64px' }}>
-      </div>
+      {isLargeScreen && (
+        <div className="w-full text-white py-6 sm:hidden md:block md:h-[60vh] lg:h-[70vh] xl:h-[90vh]" style={{ backgroundImage: `url(${currentImage})`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', height: '100vh', marginTop: '64px' }}>
+        </div>
+      )}
 
       {/* Grid of Images for Small Screens */}
-      <div className="w-full grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 p-4 sm:p-6 md:hidden mt-16">
-        {images.map((img, index) => (
-          <div key={index} className="relative w-full h-48 sm:h-64">
-            <Image src={img} alt={`Image ${index + 1}`} layout="fill" objectFit="cover" className="rounded-lg" />
-          </div>
-        ))}
-      </div>
+      {!isLargeScreen && (
+        <div className="w-full grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 p-4 sm:p-6 md:hidden mt-16">
+          {images.map((img, index) => (
+            <div key={index} className="relative w-full h-48 sm:h-64">
+              <Image src={img} alt={`Image ${index + 1}`} layout="fill" objectFit="cover" className="rounded-lg" />
+            </div>
+          ))}
+        </div>
+      )}
 
       {/* Welcome Section */}
       <div className="mt-8 bg-opacity-50 bg-gray-950 p-6 rounded-lg w-full">
