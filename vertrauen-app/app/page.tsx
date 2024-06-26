@@ -114,15 +114,13 @@ export default function Home() {
       )}
 
       {/* Grid of Images for Small Screens */}
-      {!isLargeScreen && (
-        <div className="w-full grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 p-4 sm:p-6 md:hidden mt-16">
-          {images.map((img, index) => (
-            <div key={index} className="relative w-full h-48 sm:h-64">
-              <Image src={img} alt={`Image ${index + 1}`} layout="fill" objectFit="cover" className="rounded-lg" />
-            </div>
-          ))}
-        </div>
-      )}
+ {!isLargeScreen && (
+   <div className="w-full grid grid-cols-1 sm:grid-cols-1 gap-4 sm:gap-6 p-4 sm:p-6 md:hidden mt-16">
+     <div key={0} className="relative w-full h-48 sm:h-64">
+       <Image src="/V-images/c.jpg" alt="Image 1" layout="fill" objectFit="cover" className="rounded-lg" />
+     </div>
+   </div>
+ )}
 
       {/* Welcome Section */}
       <div className="mt-8 bg-opacity-50 bg-gray-950 p-6 rounded-lg w-full">
