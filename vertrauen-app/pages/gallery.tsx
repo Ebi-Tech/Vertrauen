@@ -32,6 +32,7 @@ const Gallery = () => {
     { src: '/V-images/f.jpg', alt: 'Description of image 6' },
     { src: '/V-images/gaby.jpg', alt: 'Gaby' },
     { src: '/V-images/promise.jpg', alt: 'The Promise' },
+    { src: '/V-images/ele.jpg', alt: 'Promise X Gaby X Nancy' },
     // Add more images as needed
   ];
 

@@ -8,10 +8,10 @@ import { MdMenu } from 'react-icons/md';
 import { FaFacebookF, FaInstagram, FaYoutube } from 'react-icons/fa';
 
 const images = [
-  '/V-images/a.jpg',
-  '/V-images/b.jpg',
+  '/V-images/v3.jpg',
+  '/V-images/v1.jpg',
   '/V-images/c.jpg',
-  '/V-images/d.jpg',
+  '/V-images/v2.jpg',
 ];
 
 export default function Home() {
