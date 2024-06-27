@@ -30,18 +30,16 @@ export default function Home() {
   }, []);
 
   useEffect(() => {
-    if (isLargeScreen) {
-      const interval = setInterval(() => {
-        setCurrentImage((prev) => {
-          const currentIndex = images.indexOf(prev);
-          const nextIndex = (currentIndex + 1) % images.length;
-          return images[nextIndex];
-        });
-      }, 3000); // Change image every 3 seconds
+    const interval = setInterval(() => {
+      setCurrentImage((prev) => {
+        const currentIndex = images.indexOf(prev);
+        const nextIndex = (currentIndex + 1) % images.length;
+        return images[nextIndex];
+      });
+    }, 3000); // Change image every 3 seconds
 
-      return () => clearInterval(interval);
-    }
-  }, [isLargeScreen]);
+    return () => clearInterval(interval);
+  }, []);
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
@@ -109,18 +107,18 @@ export default function Home() {
 
       {/* Combined Banner and Introduction Section */}
       {isLargeScreen && (
-        <div className="w-full text-white py-6 sm:hidden md:block md:h-[60vh] lg:h-[70vh] xl:h-[90vh]" style={{ backgroundImage: `url(${currentImage})`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', height: '100vh', marginTop: '64px' }}>
+        <div className="grid rounded-md grid-cols-1 w-full text-white py-6  sm:hidden md:block md:h-[60vh] lg:h-[70vh] xl:h-[90vh]" style={{ backgroundImage: `url(${currentImage})`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', height: '100vh', marginTop: '64px' }}>
         </div>
       )}
 
       {/* Grid of Images for Small Screens */}
- {!isLargeScreen && (
-   <div className="w-full grid grid-cols-1 sm:grid-cols-1 gap-4 sm:gap-6 p-4 sm:p-6 md:hidden mt-16">
-     <div key={0} className="relative w-full h-48 sm:h-64">
-       <Image src="/V-images/c.jpg" alt="Image 1" layout="fill" objectFit="cover" className="rounded-lg" />
-     </div>
-   </div>
- )}
+      {!isLargeScreen && (
+        <div className="w-full grid grid-cols-1 sm:grid-cols-1 gap-4 sm:gap-6 p-1 sm:p-6 md:hidden mt-16">
+          <div key={0} className="relative w-full h-48 sm:h-64">
+            <Image src={currentImage} alt="Image 1" layout="fill" objectFit="cover" className="rounded-lg" />
+          </div>
+        </div>
+      )}
 
       {/* Welcome Section */}
       <div className="mt-8 bg-opacity-50 bg-gray-950 p-6 rounded-lg w-full">
