@@ -123,6 +123,7 @@ export default function Team() {
       <footer className="bg-blue-900 text-white py-2 w-full text-center rounded-2xl pt-5 pb-5 h-15 mt-10">
         <div>
           <p>&copy; 2024 Vertrauen. All rights reserved.</p>
+          <p className='tflex text-[10px] text-right items-end pr-4'>created by <a href="https://www.linkedin.com/in/ebitech14/" className="text-blue-300 ">ebitech</a></p>
         </div>
       </footer>
     </main>

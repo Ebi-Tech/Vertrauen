@@ -180,7 +180,9 @@ export default function Home() {
           <p className="text-sm">Kigali, Rwanda.</p>
           <p className="text-sm">Email: info@vertrauen.com | Phone: 0000000000</p>
           <p className="text-sm">&copy; 2024 Vertrauen. All rights reserved.</p>
+          <p className='tflex text-[10px] text-right items-end'>created by <a href="https://www.linkedin.com/in/ebitech14/" className="text-blue-300 ">ebitech</a></p>
         </div>
+        
       </footer>
     </main>
   );

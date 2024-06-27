@@ -25,22 +25,22 @@ const getVimeoEmbedUrl = (url: string) => {
 const projects = [
     {
         title: 'E-Lab Challenge 1',
-        description: 'Description for Project 1',
+        description: 'We are Vertrauen!',
         videoSrc: 'https://www.youtube.com/watch?v=vMBxjTifXjA',
     },
     {
         title: 'E-Lab Challenge 2',
-        description: 'Description for Project 2',
+        description: 'Discover Africa: Welcometo Westpoint!',
         videoSrc: 'https://www.youtube.com/watch?v=pT9K-GvlqRA&t=26s',
     },
     {
-        title: 'Project 3',
-        description: 'Description for Project 3',
-        videoSrc: 'https://www.instagram.com/reel/C8P-zSoIINt/?igsh=ejd1anpqZmJtNmxv',
+        title: 'E-Lab Challenge 3',
+        description: 'Help Lab',
+        videoSrc: 'https://www.youtube.com/watch?v=b1BgtZAOEo4',
     },
     {
-        title: 'Project 4',
-        description: 'Description for Project 4',
+        title: 'E-Lab Challenge 4',
+        description: 'Hunt for Treasure!',
         videoSrc: 'https://vimeo.com/87654321',
     },
     {
@@ -142,6 +142,7 @@ const Project = () => {
             <footer className="bg-blue-900 text-white py-2 w-full text-center rounded-2xl pt-5 pb-5 h-15 mt-10">
                 <div>
                     <p>&copy; 2024 Vertrauen. All rights reserved.</p>
+                    <p className='tflex text-[10px] text-right items-end pr-4'>created by <a href="https://www.linkedin.com/in/ebitech14/" className="text-blue-300 ">ebitech</a></p>
                 </div>
             </footer>
 
