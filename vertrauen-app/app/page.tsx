@@ -192,7 +192,7 @@ export default function Home() {
           <a href="https://www.instagram.com/vertrauen_._?igsh=d25hejJjcnJpZWFk" target="_blank" rel="noopener noreferrer" className="block text-pink-600">
             <FaInstagram className="w-8 h-8" />
           </a>
-          <a href="https://wa.me/0000000000" target="_blank" rel="noopener noreferrer" className="block text-green-600">
+          <a href="https://wa.me/+2349061618839" target="_blank" rel="noopener noreferrer" className="block text-green-600">
             <FaWhatsapp className="w-8 h-8" />
           </a>
           <a href="tel:+2349061618839" className="block text-blue-600">
