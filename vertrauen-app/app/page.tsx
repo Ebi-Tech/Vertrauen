@@ -1,10 +1,10 @@
 "use client";
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import Head from 'next/head';
 import { MdMenu } from 'react-icons/md';
-import { FaFacebookF, FaInstagram, FaYoutube } from 'react-icons/fa';
+import { FaFacebookF, FaInstagram, FaPhone, FaWhatsapp, FaYoutube } from 'react-icons/fa';
 
 const images = [
   '/V-images/v3.jpg',
@@ -44,6 +44,22 @@ export default function Home() {
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
+
+  const callToActionSectionRef = useRef(null);
+  const [showIcons, setShowIcons] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (callToActionSectionRef.current) {
+        const rect = (callToActionSectionRef.current as HTMLElement).getBoundingClientRect();
+        setShowIcons(rect.top < window.innerHeight && rect.bottom >= 0);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-6 bg-gray-100">
@@ -158,7 +174,7 @@ export default function Home() {
       </section>
 
       {/* Call to Action */}
-      <section className="container mx-auto py-16 text-center">
+      <section ref={callToActionSectionRef} className="container mx-auto py-16 text-center">
         <a
           href="https://www.instagram.com/vertrauen_._?igsh=d25hejJjcnJpZWFk"
           className="inline-block bg-blue-900 text-white text-lg font-semibold py-3 px-6 rounded-lg hover:bg-blue-700 transition"
@@ -167,16 +183,27 @@ export default function Home() {
         </a>
       </section>
 
+      {/* Floating Icons */}
+      {showIcons && (
+        <div className="fixed right-4 top-[60%] transform -translate-y-1/2 space-y-5 z-50">
+          <a href="https://www.youtube.com/@VERTRAUEN148" target="_blank" rel="noopener noreferrer" className="block text-red-600">
+            <FaYoutube className="w-8 h-8" />
+          </a>
+          <a href="https://www.instagram.com/vertrauen_._?igsh=d25hejJjcnJpZWFk" target="_blank" rel="noopener noreferrer" className="block text-pink-600">
+            <FaInstagram className="w-8 h-8" />
+          </a>
+          <a href="https://wa.me/0000000000" target="_blank" rel="noopener noreferrer" className="block text-green-600">
+            <FaWhatsapp className="w-8 h-8" />
+          </a>
+          <a href="tel:+2349061618839" className="block text-blue-600">
+            <FaPhone className="w-8 h-8" />
+          </a>
+        </div>
+      )}
+
       {/* Footer */}
       <footer className="w-full bg-blue-900 text-white py-4 rounded-xl">
         <div className="container mx-auto text-center">
-          <div className="mb-4">
-            <a href="https://www.youtube.com/@VERTRAUEN148" className="mx-2"
-            target="_blank" rel="noopener noreferrer"><FaYoutube className="inline-block mr-2" /><i className="fab fa-youtube">youtube@vertrauen</i></a>
-            <a href="https://www.instagram.com/vertrauen_._?igsh=d25hejJjcnJpZWFk" className="mx-2"
-            target="_blank" rel="noopener noreferrer"><FaInstagram className="inline-block mr-2" /><i className="fab fa-instagram">instagram@vertrauen_._</i> </a>
-          </div>
-
           <p className="text-sm">Kigali, Rwanda.</p>
           <p className="text-sm">Email: info@vertrauen.com | Phone: 0000000000</p>
           <p className="text-sm">&copy; 2024 Vertrauen. All rights reserved.</p>
