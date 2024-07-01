@@ -25,14 +25,23 @@ const Gallery = () => {
 
   const images = [
     { src: '/V-images/a.jpg', alt: 'First Team Photo 😃' },
-    { src: '/V-images/b.jpg', alt: 'Description of image 2' },
-    { src: '/V-images/c.jpg', alt: 'Description of image 3' },
-    { src: '/V-images/d.jpg', alt: 'Description of image 4' },
-    { src: '/V-images/e.jpg', alt: 'Description of image 5' },
-    { src: '/V-images/f.jpg', alt: 'Description of image 6' },
+    { src: '/V-images/b.jpg', alt: 'Team Photo' },
+    { src: '/V-images/c.jpg', alt: 'Team Photo' },
+    { src: '/V-images/e.jpg', alt: 'Team Photo' },
+    { src: '/V-images/f.jpg', alt: 'Team Logo' },
     { src: '/V-images/gaby.jpg', alt: 'Gaby' },
     { src: '/V-images/promise.jpg', alt: 'The Promise' },
     { src: '/V-images/ele.jpg', alt: 'Promise X Gaby X Nancy' },
+    { src: '/V-images/divine.jpg', alt: 'Ebitech' },
+    { src: '/V-images/moses.jpg', alt: 'The Sermon' },
+    { src: '/V-images/nancy.jpg', alt: 'Nancy a.k.a "The Creator"' },
+    { src: '/V-images/ketia.jpg', alt: 'Ketia 🌚' },
+    { src: '/V-images/queen.jpg', alt: 'Christabella' },
+    { src: '/V-images/P&D.jpg', alt: 'The Promise X Ebitech' },
+    { src: '/V-images/Teamphoto.jpg', alt: 'Team Photo' },
+    { src: '/V-images/Teamphoto2.jpg', alt: 'Team Photo' },
+    { src: '/V-images/Teamphoto3.jpg', alt: 'Team Photo' },
+    
     // Add more images as needed
   ];
 
