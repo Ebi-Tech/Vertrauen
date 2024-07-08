@@ -41,7 +41,7 @@ const projects = [
     {
         title: 'E-Lab Challenge 4',
         description: 'Hunt for Treasure!',
-        videoSrc: 'https://vimeo.com/87654321',
+        videoSrc: 'https://www.youtube.com/watch?v=fessxVr_6BY',
     },
     {
         title: 'Project 5',
