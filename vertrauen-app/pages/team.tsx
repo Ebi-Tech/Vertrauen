@@ -34,7 +34,7 @@ const teamMembers = [
     name: 'Nancy Agasaro',
     title: 'Content Creator, Creative Designer, Advocate',
     image: '/V-images/nancy.jpg',
-    description: '"To combat malnutrition and undernutrition, my mission is to advocate for equitable access to nutritious food and promote sustainable solutions in my home community(Kanombe). I am dedicated to raising awareness, driving policy change, and collaborating with communities to address root causes and empower individuals to lead healthier lives."',
+    description: '"My mission is to advocate for mental health awareness by fostering empathy and understanding within communities. By creating supportive systems and enhancing educational initiatives, I aim to eliminate negative stereotypes associated with mental health. My goal is to build a society where mental health is embraced and supported, ensuring that no one feels alone in their journey."',
   },
   {
     name: 'Christabella Queen Umutoni',
