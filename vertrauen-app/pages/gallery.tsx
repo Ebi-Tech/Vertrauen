@@ -25,22 +25,28 @@ const Gallery = () => {
 
   const images = [
     { src: '/V-images/a.jpg', alt: 'First Team Photo 😃' },
-    { src: '/V-images/b.jpg', alt: 'Team Photo' },
+    { src: '/V-images/ele2.jpg', alt: 'Team Photo' },
     { src: '/V-images/c.jpg', alt: 'Team Photo' },
-    { src: '/V-images/e.jpg', alt: 'Team Photo' },
+    { src: '/V-images/ebi4.jpg', alt: 'Ebitech' },
     { src: '/V-images/f.jpg', alt: 'Team Logo' },
     { src: '/V-images/gaby.jpg', alt: 'Gaby a.k.a "The Nutritionist' },
-    { src: '/V-images/promise.jpg', alt: 'The Promise' },
+    { src: '/V-images/promise.jpg', alt: 'The Chef' },
     { src: '/V-images/ele.jpg', alt: 'Promise X Gaby X Nancy' },
     { src: '/V-images/divine.jpg', alt: 'Ebitech' },
     { src: '/V-images/moses.jpg', alt: 'The Sermon' },
     { src: '/V-images/nancy.jpg', alt: 'Nancy a.k.a "The Creator"' },
-    { src: '/V-images/ketia.jpg', alt: 'Ketia 🌚a.k.a "Woman of God"' },
-    { src: '/V-images/queen.jpg', alt: 'Christabella' },
-    { src: '/V-images/P&D.jpg', alt: 'The Promise X Ebitech' },
+    { src: '/V-images/ketia.jpg', alt: 'Ketia 🌚 a.k.a "Woman of God"' },
+    { src: '/V-images/queen.jpg', alt: 'Christabella a.k.a "Queen of Rwanda"' },
+    { src: '/V-images/np.jpg', alt: 'Nancy X Promise' },
+    { src: '/V-images/P&D.jpg', alt: 'The Chef X Ebitech' },
     { src: '/V-images/Teamphoto.jpg', alt: 'Team Photo' },
     { src: '/V-images/Teamphoto2.jpg', alt: 'Team Photo' },
     { src: '/V-images/Teamphoto3.jpg', alt: 'Team Photo' },
+    { src: '/V-images/exm.jpg', alt: 'The Sermon X Ebitech' },
+    { src: '/V-images/team.jpg', alt: 'Team Photo' },
+    { src: '/V-images/qxe.jpg', alt: 'Queen X Ebitech' },
+    { src: '/V-images/qnp.jpg', alt: 'Queen X Nancy X Promise' },
+
     
     // Add more images as needed
   ];
@@ -97,7 +103,7 @@ const Gallery = () => {
           {images.map((image, index) => (
             <div
               key={index}
-              className="flex flex-col items-center border border-gray-300 rounded-lg p-4 hover:bg-gray-50 cursor-pointer"
+              className="flex flex-col items-center border border-gray-300 rounded-lg p-1 hover:bg-gray-50 cursor-pointer"
               onClick={() => openModal(image)}
             >
               <Image src={image.src} alt={image.alt} width={300} height={200} className="rounded-lg mb-4" />
