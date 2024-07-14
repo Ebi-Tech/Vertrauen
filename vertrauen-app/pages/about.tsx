@@ -100,6 +100,17 @@ const About = () => {
             <p className="mt-2 text-justify">Despite high enrollment rates, a majority of Rwandan children complete primary education without solid foundational skills. In January 2024, UNICEF reported that 33% of Primary 3 students can't read grade-level text in Kinyarwanda and nearly 90% struggle with English. Additionally, 33% of youth are not in employment, education, or training. Gender biases intensifies the issue, with a high percentage of young female domestic workers lacking primary education, and 7% of women married before 18. How can we address these critical gaps in the education system in Rwanda?</p>
           </section>
         </div>
+        {/* Solution */}
+        <section className="bg-green-200 rounded-xl text-black p-8 text-center flex-1 border-4 border-green-500 mt-6 max-w-full">
+          <h2 className="text-2xl font-bold">Solution</h2>
+          <p className="mt-2 text-justify">Our Solution involves a comprehensive training program tailored for final-year high school students. This program will feature a one-week summer camp combined with a two-month AI-driven online course, complemented by weekly in-person activities. Through this initiative, we aim to integrate technical and communication skills effectively, leveraging both online platforms and face-to-face interactions to provide a customized and high-quality educational experience. Additionally, we will provide mentorship programs and career counseling to facilitate a smooth transition from education to employment.</p>
+        </section>
+
+        {/* Prototype */}
+        <section className="bg-purple-200 rounded-xl text-black p-8 text-center flex-1 border-4 border-purple-500 mt-6 max-w-full">
+          <h2 className="text-2xl font-bold">Prototype</h2>
+          <p className="mt-2 text-justify">Our prototype includes a well structred schedule for a 1-week camp, and then a user-friendly app with courses in Professional Communication, Graphic Design, and Programming. The app features interactive modules, progress tracking, and a community forum for peer support. We have also designed a study map for Communication that covers essential topics like Professional Communication in Job Applications and Interviews, and Professional Communication with stakeholders. The prototype will be tested with secondary school students, and we will gather feedback to refine and enhance the platform.</p>
+        </section>
       </div>
 
       {/* Call to Action */}
@@ -109,6 +120,7 @@ const About = () => {
           Contact Us
         </a>
       </section>
+
 
       {/* Footer */}
       <footer className="bg-blue-900 text-white py-2 w-full text-center rounded-2xl pt-5 pb-5 h-15 mt-10">
