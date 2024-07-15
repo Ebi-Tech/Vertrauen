@@ -51,7 +51,7 @@ const projects = [
     {
         title: 'E-Lab Challenge 6',
         description: 'Your Digital Print',
-        videoSrc: 'https://vimeo.com/23456789',
+        videoSrc: 'https://youtu.be/ehOQ3uYXc24?si=GZORB_PzSprSZSIp',
     },
 ];
 
