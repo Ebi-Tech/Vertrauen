@@ -45,8 +45,8 @@ const projects = [
     },
     {
         title: 'E-Lab Challenge 5',
-        description: 'Description for Project 5',
-        videoSrc: 'https://www.youtube.com/watch?v=a3Z7zEc7AXQ',
+        description: 'Launching Your Mission',
+        videoSrc: 'https://www.youtube.com/watch?v=8L5dbDBCrkY&t=14s',
     },
     {
         title: 'Project 6',

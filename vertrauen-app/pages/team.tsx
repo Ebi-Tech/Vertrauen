@@ -14,7 +14,7 @@ const teamMembers = [
   },
   {
     name: 'Promise Kemah Kokeh',
-    title: 'Advocate, Educator',
+    title: 'Advocate, Entrepreneur',
     image: '/V-images/promise.jpg',
     description: '"I aim for a bright future for my community - Liberia - through the creation of sustainable well pay jobs."',
   },
@@ -112,7 +112,7 @@ export default function Team() {
               height={150}
               className="rounded-full mb-2 w-24 h-24 md:w-30 md:h-30 lg:w-35 lg:h-35 object-cover"
             />
-            <div className="text-center">
+            <div className="text-center text-blue-900 mt-1 text-base">
               <h3 className="text-xl font-bold">{member.name}</h3>
               <p className="text-blue-900 mt-1 text-base">{member.title}</p>
               <p className="text-gray-600 mt-2 text-sm max-h-20 overflow-y-auto">{member.description}</p>
