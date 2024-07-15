@@ -30,7 +30,7 @@ const projects = [
     },
     {
         title: 'E-Lab Challenge 2',
-        description: 'Discover Africa: Welcometo Westpoint!',
+        description: 'Discover Africa: Welcome to Westpoint!',
         videoSrc: 'https://www.youtube.com/watch?v=pT9K-GvlqRA&t=26s',
     },
     {
@@ -49,8 +49,8 @@ const projects = [
         videoSrc: 'https://www.youtube.com/watch?v=8L5dbDBCrkY&t=14s',
     },
     {
-        title: 'Project 6',
-        description: 'Description for Project 6',
+        title: 'E-Lab Challenge 6',
+        description: 'Your Digital Print',
         videoSrc: 'https://vimeo.com/23456789',
     },
 ];
