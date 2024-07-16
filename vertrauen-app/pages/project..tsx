@@ -51,7 +51,7 @@ const projects = [
     {
         title: 'E-Lab Challenge 6',
         description: 'Your Digital Print',
-        videoSrc: 'https://youtu.be/ehOQ3uYXc24?si=GZORB_PzSprSZSIp',
+        videoSrc: 'https://www.youtube.com/watch?v=ehOQ3uYXc24',
     },
 ];
 
